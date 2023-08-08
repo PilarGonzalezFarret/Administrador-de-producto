@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  margin: auto 0;
+}
+
+.formGroup {
+  background-color: rgb(239, 239, 239);
+  border: rgb(176, 173, 173) solid 1px;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 60%;
+  margin: 1rem auto;
+  color: rgb(94, 94, 94); 
+}
+
+  input {
+    border: rgb(176, 173, 173) solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.littleText {
+  color: indianred;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+button {
+  width: 20%;
+  height: 2rem;
+  border-radius: 5px;
+  border: 1px solid rgb(176, 173, 173);
+  color: rgb(94, 94, 94); 
+}
