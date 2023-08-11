@@ -1,5 +1,7 @@
+//Se importa el módulo mongoose:
 const mongoose = require("mongoose");
 
+//Se inicia la conexión con la base de datos:
 mongoose.connect('mongodb://127.0.0.1/productosdb', {
     useNewUrlParser: true,
     useUnifiedTopology: true,

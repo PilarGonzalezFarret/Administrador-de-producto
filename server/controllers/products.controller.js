@@ -1,5 +1,15 @@
+
+//Este código se refiere a las funciones controladoras 
+//que manejan las operaciones CRUD 
+//(Crear, Leer, Actualizar, Eliminar) 
+//en la base de datos para los productos.
+
+//Se importa el modelo de datos del producto 
+//que se encuentra en la carpeta models.
 const Product = require("../models/products.model");
 
+//Las sgtes funciones controladoras manejan las operaciones CRUD 
+//para los productos en la base de datos.
 module.exports.findAllProducts = (req, res) => {
     Product.find()
         .then(allDaProducts => res.json({ products: allDaProducts}))
