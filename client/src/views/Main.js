@@ -12,7 +12,7 @@ const Main = () => {
 
     useEffect(() => {
         axios.get('http://127.0.0.1:8000/api/products')
-        .then(res=>setProducts(res.data))
+        .then(res=>setProducts(res.data.products))
         .catch(err=>console.log("Error: ", err))
     }, [])
     return(

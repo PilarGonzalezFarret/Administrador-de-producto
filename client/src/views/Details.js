@@ -11,8 +11,8 @@ const Details = () => {
     }, [id]);
     const getOneProductById = async () => {
         try{ 
-            let res = await axios.get ("http://127.0.0.1:8000/api/products" + id);
-            setProduct(res.data);
+            let res = await axios.get ("http://127.0.0.1:8000/api/products/" + id);
+            setProduct(res.data.product);
         } catch (err) 
             { console.log(err)}
     }
