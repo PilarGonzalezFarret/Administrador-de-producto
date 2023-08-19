@@ -1,7 +1,7 @@
 //Importación del módulo mongoose:
 const mongoose = require("mongoose");
 
-//Definición del esquema del producto:
+//Definición del esquema del proyecto:
 const ProductSchema = new mongoose.Schema({
     title: String,
     price: Number,

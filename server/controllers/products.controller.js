@@ -2,9 +2,9 @@
 //Este código se refiere a las funciones controladoras 
 //que manejan las operaciones CRUD 
 //(Crear, Leer, Actualizar, Eliminar) 
-//en la base de datos para los productos.
+//en la base de datos para los proyectos.
 
-//Se importa el modelo de datos del producto 
+//Se importa el modelo de datos del proyecto 
 //que se encuentra en la carpeta models.
 const Product = require("../models/products.model");
 
@@ -31,8 +31,8 @@ module.exports.createNewProduct = (req, res) => {
 };
 
 module.exports.updateExistingProduct = (req, res) => {
-    Product.findOneAndUpdate({ _id: req.params.id })
-        .then(updatedProduct => res.json({ product: updatedProduct}))
+    Product.findOneAndUpdate({ _id: req.params.id }, request.body, {new:true})
+        .then(updatedProduct => res.json( updatedProduct ))
         .catch(err => res.json({ message: "Something went wrong.4", error: err}));
 };
 
