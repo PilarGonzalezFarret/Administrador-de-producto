@@ -26,7 +26,8 @@ const Details = () => {
             {product && <p> Price: { product.price } </p>}
             {product && <p> Description: { product.description } </p>}
 
-            <Link to='/Edit'>
+                
+            <Link to={'/update/'+ product._id}>
                 <p>edit this product </p>
             </Link>
 

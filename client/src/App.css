@@ -28,9 +28,10 @@ h1 {
 }
 
 button {
-  width: 20%;
+  width: 10%;
   height: 2rem;
   border-radius: 5px;
   border: 1px solid rgb(176, 173, 173);
   color: rgb(94, 94, 94); 
+  margin: 5px;
 }

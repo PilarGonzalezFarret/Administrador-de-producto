@@ -7,8 +7,14 @@ const { default: mongoose } = require('mongoose');
 //Creación de la instancia de Express:
 const app = express();
 
+//Restringir los permisos de cors.
+const corsOptions = {
+    origin: 'http://localhost:3000',
+    methods: 'GET, POST, PUT, DELETE',
+    allowedHeaders: 'Content-Type, Authorization',
+}
 //Configuración de middleware:
-app.use(cors()) // This is new
+app.use(cors(corsOptions)) // This is new
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
 

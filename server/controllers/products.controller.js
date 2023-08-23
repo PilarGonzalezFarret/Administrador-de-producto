@@ -31,7 +31,7 @@ module.exports.createNewProduct = (req, res) => {
 };
 
 module.exports.updateExistingProduct = (req, res) => {
-    Product.findOneAndUpdate({ _id: req.params.id }, request.body, {new:true})
+    Product.findOneAndUpdate({ _id: req.params.id }, req.body, {new:true})
         .then(updatedProduct => res.json( updatedProduct ))
         .catch(err => res.json({ message: "Something went wrong.4", error: err}));
 };

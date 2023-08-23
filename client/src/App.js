@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Main from './views/Main';
 import Details from './views/Details';
@@ -14,8 +14,8 @@ function App() {
         <Routes> 
           <Route path="/" element={<Main/>}/> 
           <Route path="/products/:id/" element={<Details/>} />
-          <Route path="/Details" element={<Details/>} />
-          <Route path="/Edit" element={<Edit/>} />
+          <Route path="/update/:id/" element={<Edit/>} />
+          <Route path="/delete/:id/" element={<Edit/>} />
         </Routes> 
     </div>
   );
